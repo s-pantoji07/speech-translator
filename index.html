@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech Translation App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Speech Translation</h1>
+
+    <!-- Language Selection Dropdowns -->
+    <label for="inputLanguage">Choose input language (leave blank for auto-detect):</label>
+    <select id="inputLanguage">
+        <option value="">Auto-Detect</option>
+        <!-- Languages will be populated by JavaScript -->
+    </select>
+
+    <label for="outputLanguage">Choose output language:</label>
+    <select id="outputLanguage">
+        <!-- Languages will be populated by JavaScript -->
+    </select>
+
+    <!-- Button to Start Speech Recognition -->
+    <button onclick="startSpeechRecognition()">Start Translation</button>
+
+    <!-- Display Transcribed and Translated Text -->
+    <div>
+        <h2>Transcribed Text:</h2>
+        <p id="transcribedText"></p>
+
+        <h2>Detected Language:</h2>
+        <p id="detectedLanguage"></p>
+
+        <h2>Translated Text:</h2>
+        <p id="translatedText"></p>
+    </div>
+
+    <!-- Link the JavaScript file -->
+    <script src="speechTranslation.js"></script>
+</body>
+</html>
